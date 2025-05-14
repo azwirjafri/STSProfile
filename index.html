@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Carousel with Swiper</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .swiper-container {
+            width: 90vw;
+            height: 90vh;
+            max-width: 1200px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+        }
+        .swiper-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- Swiper container -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="1.png" alt="Page 1"></div>
+            <div class="swiper-slide"><img src="2.png" alt="Page 2"></div>
+            <div class="swiper-slide"><img src="3.png" alt="Page 3"></div>
+            <div class="swiper-slide"><img src="5.png" alt="Page 5"></div>
+            <div class="swiper-slide"><img src="6.png" alt="Page 6"></div>
+            <div class="swiper-slide"><img src="7.png" alt="Page 7"></div>
+            <div class="swiper-slide"><img src="8.png" alt="Page 8"></div>
+            <div class="swiper-slide"><img src="9.png" alt="Page 9"></div>
+            <div class="swiper-slide"><img src="10.png" alt="Page 10"></div>
+            <div class="swiper-slide"><img src="11.png" alt="Page 11"></div>
+            <div class="swiper-slide"><img src="12.png" alt="Page 12"></div>
+            <div class="swiper-slide"><img src="13.png" alt="Page 13"></div>
+            <div class="swiper-slide"><img src="14.png" alt="Page 14"></div>
+            <div class="swiper-slide"><img src="15.png" alt="Page 15"></div>
+            <div class="swiper-slide"><img src="16.png" alt="Page 16"></div>
+            <div class="swiper-slide"><img src="17.png" alt="Page 17"></div>
+            <div class="swiper-slide"><img src="18.png" alt="Page 18"></div>
+            <div class="swiper-slide"><img src="19.png" alt="Page 19"></div>
+            <div class="swiper-slide"><img src="20.png" alt="Page 20"></div>
+            <div class="swiper-slide"><img src="21.png" alt="Page 21"></div>
+            <div class="swiper-slide"><img src="22.png" alt="Page 22"></div>
+            <div class="swiper-slide"><img src="23.png" alt="Page 23"></div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- Pagination dots -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            keyboard: {
+                enabled: true,
+            },
+        });
+    </script>
+</body>
+</html>
